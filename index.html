@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism - God's Own Country</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="colorful-background"></div>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo">Kerala<span>Tourism</span></div>
+                <div class="tagline">God's Own Country</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                    <li><a href="#experiences"><i class="fas fa-umbrella-beach"></i> Experiences</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-quote-left"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Kerala</h1>
+            <p>Explore the breathtaking beauty of God's Own Country</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="destination-search" placeholder="Search destinations...">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="quick-tags">
+                    <span>Popular:</span>
+                    <a href="#" class="tag" data-search="Munnar">Munnar</a>
+                    <a href="#" class="tag" data-search="Alleppey">Alleppey</a>
+                    <a href="#" class="tag" data-search="Kochi">Kochi</a>
+                    <a href="#" class="tag" data-search="Wayanad">Wayanad</a>
+                    <a href="#" class="tag" data-search="Kovalam">Kovalam</a>
+                    <a href="#" class="tag" data-search="Kumarakom">Kumarakom</a>
+                    <a href="#" class="tag" data-search="Bekal">Bekal</a>
+                    <a href="#" class="tag" data-search="Athirappilly">Athirappilly</a>
+                    <a href="#" class="tag" data-search="Kochi">Kochi</a>
+                </div>
+            </div>
+            
+            <div class="search-results" id="search-results">
+                <h3>Search Results</h3>
+                <div class="results-grid" id="results-grid"></div>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Kerala</h2>
+                <p>Discover the diverse landscapes and rich culture of Kerala through our interactive map</p>
+            </div>
+            <div class="kerala-map-container">
+                <img src="backwater1.png" alt="Kerala Map" class="kerala-map">
+                <div class="map-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="districts-section" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Districts</h2>
+                <p>Kerala's 14 districts each offer unique experiences and attractions</p>
+            </div>
+            
+            <div class="districts-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beach">Beaches</button>
+                <button class="filter-btn" data-filter="backwater">Backwaters</button>
+                <button class="filter-btn" data-filter="hill">Hills</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+            </div>
+            
+            <div class="districts-container" id="districts-container">
+                <!-- District cards will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="experiences-section" id="experiences">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unique Experiences</h2>
+                <p>Immerse yourself in Kerala's diverse cultural and natural experiences</p>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Houseboat Cruise</h3>
+                    <p>Glide through the tranquil backwaters of Alleppey in a traditional Kettuvallam houseboat.</p>
+                    <a href="https://www.makemytrip.com/hotels/best_kerala_houseboat-details-alleppey.html" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Ayurvedic Retreat</h3>
+                    <p>Rejuvenate with authentic Ayurvedic treatments in Kerala's renowned wellness centers.</p>
+                    <a href="https://www.keralatourism.org/ayurveda-centres" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Tea Plantation Tours</h3>
+                    <p>Explore the lush tea gardens of Munnar and learn about tea production.</p>
+                    <a href="https://wanderon.in/blogs/tea-plantations-in-kerala" target="_blank" class="learn-more">Learn More</a>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3>Cultural Performances</h3>
+                    <p>Witness traditional Kathakali, Theyyam, and Kalaripayattu performances.</p>
+                    <a href="https://www.keralatourism.org/event/traditional-festivals/" target="_blank" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Traveler Stories</h2>
+                <p>What our visitors say about their Kerala experience</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Kerala's backwaters were the highlight of our India trip. The houseboat experience was so peaceful and the food was incredible. Can't wait to return!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>From London, UK</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>The wildlife in Periyar was amazing - we saw elephants, tigers, and so many birds. Our guide was extremely knowledgeable. Highly recommend!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>From Toronto, Canada</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Kerala's beaches are paradise! We spent two weeks exploring from Kovalam to Bekal and every beach had its own charm. The people are so warm and welcoming.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elena Rodriguez">
+                        <div>
+                            <h4>Elena Rodriguez</h4>
+                            <span>From Barcelona, Spain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for travel tips, special offers, and Kerala tourism updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>About Kerala</h3>
+                    <p>Kerala, located on India's tropical Malabar Coast, is known as "God's Own Country" for its natural beauty, rich culture, and warm hospitality.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/keralatourismofficial/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/KeralaTourism?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/keralatourism/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCmiF2GcrQwFeiTdnKJ_023A"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Popular Destinations</h3>
+                    <ul>
+                        <li><a href="#">Munnar</a></li>
+                        <li><a href="#">Alleppey</a></li>
+                        <li><a href="#">Kochi</a></li>
+                        <li><a href="#">Wayanad</a></li>
+                        <li><a href="#">Kovalam</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tourism Department, Government of Kerala, Thiruvananthapuram</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 471 2321132</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@keralatourism.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kerala Tourism. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="https://github.com/Ammusabu">Ammusabu</a>
+                    <a href="https://www.google.com/maps/@10.7061284,76.9275945,7.7z?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chatbot-section">
+        <button class="chatbot-toggle">
+            <i class="fas fa-robot"></i> Travel Assistant
+        </button>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chatbot">
+                </div>
+                <div class="chatbot-info">
+                    <h3>Kerala Travel Guide</h3>
+                    <div class="chatbot-status">Online</div>
+                </div>
+                <div class="chatbot-controls">
+                    <button class="minimize-chatbot"><i class="fas fa-minus"></i></button>
+                    <button class="close-chatbot"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chatbot-input">
+                <button class="emoji-btn"><i class="far fa-smile"></i></button>
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <script>
+        // Mobile menu toggle
+        function setupMobileMenu() {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            if (toggle && nav) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    toggle.innerHTML = nav.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('active');
+                    toggle.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+        }
+        
+        // Quick tag search
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', function(e) {
+                e.preventDefault();
+                const searchTerm = this.dataset.search;
+                document.getElementById('destination-search').value = searchTerm;
+                document.getElementById('search-btn').click();
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            setupMobileMenu();
+        });
+    </script>
+</body>
+</html>
